@@ -4,6 +4,7 @@ import { ViewComponent } from './page/view/view.component';
 import { AddItemComponent } from './page/add-item/add-item.component';
 import { ViewItemComponent } from './page/view-item/view-item.component';
 import { AddRentalItemsComponent } from './page/add-rental-items/add-rental-items.component';
+import { ViewRentalItemsComponent } from './page/view-rental-items/view-rental-items.component';
 
 export const routes: Routes = [
 
@@ -49,7 +50,17 @@ component: ViewComponent
             
             
             
-            }
+            },
+
+            {
+
+
+                path: "view-rental-item",
+                component: ViewRentalItemsComponent
+                
+                
+                
+                }
         
     
 
