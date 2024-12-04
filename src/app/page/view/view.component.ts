@@ -54,11 +54,12 @@ this.selectedCustomer =customer;
 
 }
 
-public savecustomer(){
+public saveCustomer(){
 
 this.http.put("http://localhost:8020/customer/update-customer",this.selectedCustomer).subscribe(data=>{
 
 alert("Customer Updated");
+this.loadtable();
 
 
 })
