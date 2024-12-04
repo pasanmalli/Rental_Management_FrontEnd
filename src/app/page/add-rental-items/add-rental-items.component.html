@@ -1,0 +1,50 @@
+<div class="container ml-2 text-center">
+
+    <h1 class="text-center bg-dark text-white">Rental</h1>  
+    
+    <div class="container-fluid text-center">
+    <div class="form-group">
+   
+  
+    <div class="form-group">
+    <label>Rental Date</label>
+    <input class="ml-3" type="text" placeholder="Enter City" [(ngModel)]="rentalItem.rentalDate">
+  </div>
+
+  <div class="form-group">
+  <label>Return Date</label>
+  <input class="ml-3" type="text" placeholder="Enter City" [(ngModel)]="rentalItem.returnDate">
+</div>
+
+<div class="form-group">
+    <label>Due Date</label>
+    <input class="ml-3" type="text" placeholder="Enter City" [(ngModel)]="rentalItem.dueDate">
+  </div>
+    
+  <div class="form-group">
+    <label>Total Cost</label>
+    <input class="ml-3" type="text" placeholder="Enter City" [(ngModel)]="rentalItem.totalCost">
+  </div>
+
+
+    
+  
+  
+  
+    <button type="submit" class="btn btn-primary" (click)="addRentalItem()">Submit</button>
+  
+    </div>
+     <br>
+    <h1>{{rentalItem.returnDate}}</h1>
+    <br>
+    <h1>{{rentalItem.dueDate}}</h1>
+    <br>
+    <h1>{{rentalItem.totalCost}}</h1>
+  
+  
+    
+  
+  
+  
+  </div>
+  
