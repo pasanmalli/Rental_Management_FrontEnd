@@ -1,39 +1,37 @@
 <div class="container ml-2 text-center">
 
-  <h1 class="text-center bg-dark text-white">Add Student</h1>  
+  <h1 class="text-center bg-dark text-white">Add Customer</h1>  
   
   <div class="container-fluid text-center">
   <div class="form-group">
   <label>Name</label>
-  <input class="ml-5 mp-5" type="text" placeholder="Name" [(ngModel)]="student.name">
+  <input class="ml-5 mp-5" type="text" placeholder="Name" [(ngModel)]="customer.name">
   </div>
 
 
   <div class="form-group">
   <label>City</label>
-  <input class="ml-3" type="email" placeholder="Enter email" [(ngModel)]="student.email">
+  <input class="ml-3" type="text" placeholder="Enter City" [(ngModel)]="customer.city">
 </div>
   
   <div class="form-group">
   <label>Contact</label>
-  <input class="ml-3" type="text" placeholder="Address" [(ngModel)]="student.address">
+  <input class="ml-3" type="text" placeholder="Tel Number" [(ngModel)]="customer.contact">
   </div>
 
 
 
 
-  <button type="submit" class="btn btn-primary" (click)="addStudent()">Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="addCustomer()">Submit</button>
 
   </div>
    <br>
-  <h1>{{student.name}}</h1>
+  <h1>{{customer.name}}</h1>
   <br>
-  <h1>{{student.email}}</h1>
+  <h1>{{customer.city}}</h1>
   <br>
-  <h1>{{student.password}}</h1>
+  <h1>{{customer.contact}}</h1>
 
-  <br>
-  <h1>{{student.address}}</h1>
 
   
 

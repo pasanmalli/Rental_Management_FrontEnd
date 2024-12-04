@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ViewComponent {
 
- public studentList:any= [];
+ public customerList:any= [];
 
   
 constructor(private http:HttpClient){
@@ -22,9 +22,9 @@ constructor(private http:HttpClient){
 
 loadtable(){
 
-this.http.get("http://localhost:8030/student/find-all").subscribe(data=>{
+this.http.get("http://localhost:8020/customer/find-all").subscribe(data=>{
 
-this.studentList = data;
+this.customerList = data;
 
 
 
@@ -33,32 +33,32 @@ this.studentList = data;
 
 }
 
-deleteStudent(id:any){
+deleteCustomer(id:any){
 
 console.log(id);
-this.http.delete(`http://localhost:8030/student/delete-student/${id}`).subscribe(data=>{
+this.http.delete(`http://localhost:8020/customer/delete-customer/${id}`).subscribe(data=>{
 
-alert("Student Deleted Successfully");
+alert("Customer Deleted Successfully");
 this.loadtable();
 
 })
 
 }
 
-public selectedStudent:any={};
+public selectedCustomer:any={};
 
-selectUpdateStudent(student:any){
+selectUpdateCustomer(customer:any){
 
-console.log(student);
-this.selectedStudent =student;
+console.log(customer);
+this.selectedCustomer =customer;
 
 }
 
-public saveStudent(){
+public savecustomer(){
 
-this.http.put("http://localhost:8030/student/update-student",this.selectedStudent).subscribe(data=>{
+this.http.put("http://localhost:8020/customer/update-customer",this.selectedCustomer).subscribe(data=>{
 
-alert("Student Updated");
+alert("Customer Updated");
 
 
 })

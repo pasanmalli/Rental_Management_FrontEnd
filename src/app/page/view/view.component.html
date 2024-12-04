@@ -1,7 +1,7 @@
 
 <div class="container-fluid">
 
-<h1 class="text-center bg-dark text-white">Manage Student</h1>  
+<h1 class="text-center bg-dark text-white">Manage Customer</h1>  
 
 <!-- <h1>{{customerList[2].email}}</h1>
 
@@ -23,14 +23,14 @@
 <th>Password</th>
 </tr>
 
-<tr *ngFor="let student of studentList ; index as i">
+<tr *ngFor="let customer of customerList ; index as i">
 <td>{{i+1}}</td>
-<td>{{student.id}}</td>
-<td>{{student.name}}</td>
-<td>{{student.email}}</td>
-<td>{{student.address}}</td>
-<td><button class="btn-primary" (click)="selectUpdateStudent(student)" data-toggle="modal" data-target="#exampleModal">Update</button></td>
-<td><button class="btn-secondary" (click)="deleteStudent(student.id)">Delete</button></td>
+<td>{{customer.id}}</td>
+<td>{{customer.name}}</td>
+<td>{{customer.city}}</td>
+<td>{{customer.contact}}</td>
+<td><button class="btn-primary" (click)="selectUpdateCustomer(customer)" data-toggle="modal" data-target="#exampleModal">Update</button></td>
+<td><button class="btn-secondary" (click)="deleteCustomer(customer.id)">Delete</button></td>
 </tr>
 
 

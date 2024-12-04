@@ -14,34 +14,27 @@ export class RegisterComponent {
 
 constructor(private http:HttpClient){}  
 
-public student:any={
+public customer:any={
 
 name:"",
-email:"",
-password:"",
-address:""
+city:"",
+contact:""
 
 
 
 }
 
-addStudent(){
+addCustomer(){
 
-console.log(this.student);
+console.log(this.customer);
 
-this.http.post("http://localhost:8030/student/add-student",this.student).subscribe(data=>{
+this.http.post("http://localhost:8020/customer/add-customer",this.customer).subscribe(data=>{
 
-alert("Student Added Succefully");
+alert("Customer Added Succefully");
 location.reload();
 
 })
 
-
 }
-
-
-searchByIdCustomer(){}
-
-
 
 }
